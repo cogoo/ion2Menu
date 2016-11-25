@@ -1,0 +1,61 @@
+// http://ionicframework.com/docs/v2/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+.menu-o {
+    ion-content {
+        background-color: transparentize($color: darken($color: color($colors, menu-o), $amount: 30%) , $amount: 0.1);
+        ion-row {
+            margin-top: -7px;
+        }
+        button {
+            height: 20vh;
+            &.img-bg {
+                background-size: cover;
+            }
+            label {
+                display: block;
+                padding-top: 5px;
+            }
+            ion-icon {
+                font-size: 30px;
+            }
+        } 
+    }
+
+    ion-item {
+        background-color: transparent;
+        color: #fff;
+        h2 {
+            text-align: right;
+        }
+    }
+    .menu-inner {
+        width: 100%;
+        background-color: transparent;
+    }
+}
+
+.firebase {
+    background-image: url(https://drscdn.500px.org/photo/156764089/m%3D2048/4782b6e418c7952d10dc989bba0e262b);
+}
+
+.wifi {
+    background-image: url('https://drscdn.500px.org/photo/148437083/m%3D2048/da36861b57078d0805a75154aa5e8f8f');
+}
+
+.medal {
+    background-image: url('https://drscdn.500px.org/photo/105368653/m%3D2048/2b0ff083bbdac854fa43aaace96afe98');
+}
