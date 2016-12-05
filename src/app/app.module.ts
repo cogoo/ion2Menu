@@ -11,7 +11,10 @@ import { Page2 } from '../pages/page2/page2';
     Page2
   ],
   imports: [
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp, {
+      menuType: 'overlay',
+      iconMode: 'md'
+    })
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -19,6 +22,6 @@ import { Page2 } from '../pages/page2/page2';
     Page1,
     Page2
   ],
-  providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
+  providers: [{ provide: ErrorHandler, useClass: IonicErrorHandler }]
 })
-export class AppModule {}
+export class AppModule { }
